@@ -5,6 +5,9 @@ class Person  {
 	}
 
 	// methods
+	getFullName(){
+		return `${this.name} ${this.lastName}`;
+	}
 	
 }
 

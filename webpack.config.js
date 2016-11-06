@@ -1,3 +1,5 @@
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
 	entry : `${__dirname}/src/main.js`,
 	output : {
@@ -14,5 +16,14 @@ module.exports = {
 				} 
 			}
 		]
-	}
+	},
+	devServer : {
+		contentBase : `${__dirname}`,
+		inline : true
+	},
+	// plugins : [
+	// 	new HtmlWebpackPlugin({
+	// 		template : path.join('${__dirname}', 'index.html')
+	// 	})
+	// ]
 }
