@@ -24,7 +24,7 @@ function getOtherStuff() {
 		setTimeout(() => {
 			const result = [misc.sayHello(), misc.sayHello('lior')];
 			resolve(result);
-		}, 1000);
+		}, 2000);
 	});
 }
 
